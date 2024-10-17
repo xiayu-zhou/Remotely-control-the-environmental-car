@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@mipmap/flowing"
+    tools:context=".AdminFlowing">
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:onClick="Back"
+            android:alpha="0.5"
+            android:src="@mipmap/back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+        <ImageView
+            android:layout_marginLeft="40dp"
+            android:src="@mipmap/logoc"
+            android:layout_width="70dp"
+            android:layout_height="70dp"/>
+        <TextView
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:text="流水查看"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:layout_width="330dp"
+        android:layout_height="550dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:background="@color/transparent_white">
+
+        <TextView
+            android:id="@+id/AllCount"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:text="00"
+            android:layout_width="300dp"
+            android:layout_height="30dp"/>
+        <TextView
+            android:id="@+id/AllRMB"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:text="00"
+            android:layout_width="300dp"
+            android:layout_height="30dp"/>
+<!--        <ListView
+            android:id="@+id/FlowingListView"
+            android:layout_marginTop="10dp"
+            android:layout_width="300dp"
+            android:layout_height="30dp"/>-->
+        <Spinner
+            android:gravity="center_horizontal"
+            android:id="@+id/spinner"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:entries="@array/planets_array" />
+        <LinearLayout
+            android:gravity="center"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/AdminShowSousuoinput"
+                android:background="@color/transparent_white"
+                android:layout_width="200dp"
+                android:layout_height="37dp"/>
+
+            <Button
+                android:id="@+id/AdminAlreadyBuyGoodsSouSuo"
+                android:backgroundTint="#3DA69C"
+                android:text="搜索"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/FlowingPIC"
+            android:layout_width="250dp"
+            android:layout_height="180dp"/>
+
+        <LinearLayout
+            android:background="@color/transparent_black"
+            android:layout_width="300dp"
+            android:layout_height="40dp">
+            <TextView
+                android:textSize="16dp"
+                android:gravity="center"
+                android:text="商品名"
+                android:layout_width="100dp"
+                android:layout_height="40dp"/>
+            <TextView
+                android:id="@+id/FlowingName"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="40dp">
+            <TextView
+                android:textSize="16dp"
+                android:gravity="center"
+                android:text="注册日期"
+                android:layout_width="100dp"
+                android:layout_height="40dp"/>
+            <TextView
+                android:id="@+id/FlowingDate"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@color/transparent_black"
+            android:layout_width="300dp"
+            android:layout_height="40dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="销量"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/FlowingCount"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="40dp">
+            <TextView
+                android:textSize="16dp"
+                android:gravity="center"
+                android:text="流水"
+                android:layout_width="100dp"
+                android:layout_height="40dp"/>
+            <TextView
+                android:id="@+id/FlowingRMB"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

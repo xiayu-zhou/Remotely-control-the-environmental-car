@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@mipmap/loginback"
+    tools:context=".SignUp"
+    android:layout_height="match_parent">
+
+    <!--使用线性布局-->
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--标题-->
+        <TextView
+            android:id="@+id/TitleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="星宇购物系统注册"
+            android:gravity="center"
+            android:textStyle="italic"
+            android:textColor="#808080"
+            android:textSize="30dp" />
+
+        <ImageView
+            android:src="@mipmap/logoc"
+            android:layout_marginTop="30dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"/>
+
+        <!--嵌套线性布局-->
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:id="@+id/AllInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--嵌套线性布局-->
+            <LinearLayout
+                android:gravity="center_horizontal"
+                android:id="@+id/UserNameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:alpha="0.7"
+                    android:src="@mipmap/userpserson"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"/>
+                <!--用户名输入-->
+                <EditText
+                    android:alpha="0.7"
+                    android:background="@color/white"
+                    android:id="@+id/UserNameEdit"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:hint="输入用户名"
+                    android:padding="15dp"
+                    android:singleLine="true"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+
+            <!--嵌套线性布局-->
+            <LinearLayout
+                android:gravity="center_horizontal"
+                android:id="@+id/PassWordLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:alpha="0.7"
+                    android:src="@mipmap/userpassword"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"/>
+                <!--密码输入-->
+                <EditText
+                    android:alpha="0.7"
+                    android:background="@color/white"
+                    android:id="@+id/PassWordEdit"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:padding="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:hint="输入密码"
+                    android:textSize="15dp"
+                    android:maxLength="16"
+                    android:singleLine="true"
+                    android:inputType="textPassword" />
+
+            </LinearLayout>
+
+            <!--嵌套线性布局-->
+            <LinearLayout
+                android:gravity="center_horizontal"
+                android:id="@+id/PasswordAgainLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:alpha="0.7"
+                    android:src="@mipmap/userpassword"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"/>
+                <!--二次密码输入-->
+                <EditText
+                    android:alpha="0.7"
+                    android:background="@color/white"
+                    android:id="@+id/PassWordAgainEdit"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:padding="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:hint="再次输入密码"
+                    android:maxLength="16"
+                    android:textSize="15dp"
+                    android:singleLine="true"
+                    android:inputType="textPassword" />
+
+            </LinearLayout>
+
+            <!--嵌套线性布局-->
+            <LinearLayout
+                android:gravity="center_horizontal"
+                android:id="@+id/AgeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"/>
+            <!--嵌套线性布局-->
+            <LinearLayout
+                android:gravity="center_horizontal"
+                android:id="@+id/PhoneLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:alpha="0.7"
+                    android:src="@mipmap/phone"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"/>
+
+                <EditText
+                    android:alpha="0.7"
+                    android:background="@color/white"
+                    android:digits="1234567890"
+                    android:id="@+id/Phone"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:padding="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:hint="输入电话号码"
+                    android:textSize="15dp"
+                    android:maxLength="16"
+                    android:singleLine="true" />
+
+            </LinearLayout>
+            <!--嵌套线性布局-->
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                android:id="@+id/OccLayout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <RadioButton
+                        android:text="管理员"
+                        android:id="@+id/AdminIDSelect"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <RadioButton
+                        android:id="@+id/UserIDSelect"
+                        android:layout_marginLeft="30dp"
+                        android:text="用户"
+                        android:checked="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <!--嵌套线性布局-->
+            <LinearLayout
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:id="@+id/ButtonLayout"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!--立即注册按钮-->
+
+                <!--返回登录按钮-->
+                <Button
+                    android:backgroundTint="@color/blue"
+                    android:id="@+id/SignUpButton"
+                    android:layout_width="130dp"
+                    android:layout_height="50dp"
+                    android:text="立即注册"
+                    android:textColor="@color/white"
+                    android:textSize="15dp" />
+
+                <Button
+                    android:backgroundTint="@color/blue"
+                    android:layout_marginLeft="30dp"
+                    android:id="@+id/BackLoginButton"
+                    android:layout_width="130dp"
+                    android:layout_height="50dp"
+                    android:textColor="@color/white"
+                    android:text="返回登录"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/SignUpSuccess"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:alpha="0.7"
+                android:background="@color/white"
+                android:gravity="center_horizontal"
+                android:id="@+id/ShowID"
+                android:textColor="@color/blue"
+                android:text="请等待"
+                android:layout_width="270dp"
+                android:textSize="30dp"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/RightNowLogin"
+                android:backgroundTint="@color/blue"
+                android:layout_marginTop="30dp"
+                android:text="马上登录"
+                android:layout_width="200dp"
+                android:textSize="25dp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

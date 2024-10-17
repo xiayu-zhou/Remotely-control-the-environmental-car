@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">星宇购物</string>
+    <string-array name="planets_array">
+        <item>一周内</item>
+        <item>一月内</item>
+        <item>一年内</item>
+        <item>开服内</item>
+    </string-array>
+</resources>

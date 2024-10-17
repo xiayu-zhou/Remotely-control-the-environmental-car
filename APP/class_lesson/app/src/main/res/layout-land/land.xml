@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="MissingDefaultResource">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_marginLeft="20dp"
+            android:id="@+id/Back"
+            android:backgroundTint="@color/teal_200"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="返回" />
+        <Button
+            android:id="@+id/Update"
+            android:onClick="shuax"
+            android:backgroundTint="@color/teal_200"
+            android:layout_marginLeft="20dp"
+            android:text="刷新"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:layout_marginLeft="20dp"
+            android:onClick="findBlu"
+            android:text="搜索附近"
+            android:id="@+id/findBlu"
+            android:backgroundTint="@color/teal_200"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:onClick="ShowData"
+            android:layout_marginLeft="20dp"
+            android:text="数据显示"
+            android:id="@+id/ShowData"
+            android:backgroundTint="@color/teal_200"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:layout_marginLeft="20dp"
+            android:text="Link"
+            android:id="@+id/OorC"
+            android:onClick="OorC"
+            android:backgroundTint="@color/teal_200"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:onClick="Function"
+            android:layout_marginLeft="20dp"
+            android:text="功能"
+            android:id="@+id/Function"
+            android:backgroundTint="@color/teal_200"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--左边按键控制-->
+        <LinearLayout
+            android:layout_width="160dp"
+            android:layout_height="match_parent">
+
+            <!--全速前进-->
+            <LinearLayout
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <!--前进按钮-->
+                <Button
+                    android:id="@+id/AllAdvance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/purple_qi"
+                    android:text="前进" />
+
+                <!--后退按钮-->
+                <Button
+                    android:id="@+id/AllBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/purple_qi"
+                    android:text="后退" />
+
+                <!--左边前进按钮-->
+                <Button
+
+                    android:id="@+id/LAllAdvance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/purple_qi"
+                    android:text="左前" />
+
+                <!--左后退按钮-->
+                <Button
+                    android:id="@+id/LAllBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/purple_qi"
+                    android:text="左退" />
+            </LinearLayout>
+
+            <!--左边履带-->
+            <LinearLayout
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <SeekBar
+                    android:id="@+id/SeekBar1"
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:max="100"
+                    android:progress="50"
+                    android:rotation="-90" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="right"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--右边履带-->
+
+            <LinearLayout
+                android:layout_width="367dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <!--设备显示-->
+
+                <ListView
+                    android:id="@+id/device_list"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="75dp" />
+
+                <LinearLayout
+                    android:id="@+id/DHDataShow"
+                    android:layout_width="367dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/TestView"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/wendu"
+                        android:layout_width="200dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="40dp"
+                        android:text="温度:"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/shidu"
+                        android:layout_width="200dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:text="湿度:"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/juli"
+                        android:layout_width="200dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:text="距离:"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/rntihonwgai"
+                        android:layout_width="200dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:text=""
+                        android:textSize="20dp" />
+
+                    <Button
+                        android:id="@+id/DataUpdate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="250dp"
+                        android:backgroundTint="@color/blue_ya"
+                        android:text="刷新数据" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/FunctionLe"
+                    android:visibility="gone"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <Button
+                            android:id="@+id/OpenLight"
+                            android:text="打开探灯"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"/>
+                        <Button
+                            android:layout_marginLeft="20dp"
+                            android:id="@+id/CloseLight"
+                            android:text="关闭探灯"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <Button
+                            android:id="@+id/OpenWarning"
+                            android:text="打开警报灯"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"/>
+                        <Button
+                            android:id="@+id/CloseWarning"
+                            android:layout_marginLeft="20dp"
+                            android:text="关闭警报灯"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <Button
+                            android:id="@+id/TanLeft"
+                            android:text="探头左移"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"/>
+                        <Button
+                            android:id="@+id/TanRight"
+                            android:layout_marginLeft="20dp"
+                            android:text="探头右移"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <Button
+                            android:id="@+id/TanUp"
+                            android:text="探头上移"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"/>
+                        <Button
+                            android:id="@+id/TanDown"
+                            android:layout_marginLeft="20dp"
+                            android:text="探头下移"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <Button
+                            android:id="@+id/TanReset"
+                            android:text="探头重置"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginRight="30dp"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <SeekBar
+                    android:progress="50"
+                    android:id="@+id/SeekBar2"
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:max="100"
+                    android:rotation="-90" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical"
+                android:layout_width="50dp"
+                android:layout_height="match_parent">
+                <!--左边前进按钮-->
+                <Button
+                    android:id="@+id/RAllAdvance"
+                    android:layout_marginTop="20dp"
+                    android:backgroundTint="@color/purple_qi"
+                    android:text="右前"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <!--左后退按钮-->
+                <Button
+                    android:id="@+id/RAllBack"
+                    android:layout_marginTop="40dp"
+                    android:backgroundTint="@color/purple_qi"
+                    android:text="右退"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

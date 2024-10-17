@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/loginback"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:textColor="#A5C8DA"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:text="星宇购物系统"
+        android:textSize="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+
+    <ImageView
+        android:src="@mipmap/logoc"
+        android:layout_marginTop="30dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:alpha="0.8"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="ID:"
+                android:textSize="20dp"
+                android:textColor="@color/blue"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:background="@null"
+                android:focusable="false"
+                android:id="@+id/ShowMeID"
+                android:layout_width="270dp"
+                android:layout_height="40dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:alpha="0.8"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="密码:"
+                android:textSize="20dp"
+                android:textColor="@color/blue"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:background="@null"
+                android:focusable="false"
+                android:id="@+id/ShowMePWD"
+                android:layout_width="270dp"
+                android:layout_height="40dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:alpha="0.8"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="姓名:"
+                android:textSize="20dp"
+                android:textColor="@color/blue"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:background="@null"
+                android:focusable="false"
+                android:id="@+id/ShowMeName"
+                android:layout_width="270dp"
+                android:layout_height="40dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:alpha="0.8"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="年龄:"
+                android:textSize="20dp"
+                android:textColor="@color/blue"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:digits="1234567890"
+                android:background="@null"
+                android:focusable="false"
+                android:id="@+id/ShowMeAge"
+                android:layout_width="270dp"
+                android:layout_height="40dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:alpha="0.8"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="性别:"
+                android:textSize="20dp"
+                android:textColor="@color/blue"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:digits="男女"
+                android:background="@null"
+                android:focusable="false"
+                android:id="@+id/ShowMeSex"
+                android:layout_width="270dp"
+                android:layout_height="40dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:alpha="0.8"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+
+                android:text="电话:"
+                android:textSize="20dp"
+                android:textColor="@color/blue"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:digits="1234567890"
+                android:background="@null"
+                android:focusable="false"
+                android:id="@+id/ShowMePhone"
+                android:layout_width="270dp"
+                android:layout_height="40dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:alpha="0.8"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="职业:"
+                android:textSize="20dp"
+                android:textColor="@color/blue"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:background="@null"
+                android:focusable="false"
+                android:id="@+id/ShowMeOcc"
+                android:layout_width="270dp"
+                android:layout_height="40dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:alpha="0.8"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="签名:"
+                android:textSize="20dp"
+                android:textColor="@color/blue"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:background="@null"
+                android:focusable="false"
+                android:id="@+id/ShowMePS"
+                android:layout_width="270dp"
+                android:layout_height="40dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:alpha="0.8"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="地址:"
+                android:textSize="20dp"
+                android:textColor="@color/blue"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:background="@null"
+                android:focusable="false"
+                android:id="@+id/ShowMeAddress"
+                android:layout_width="270dp"
+                android:layout_height="40dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:alpha="0.8"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="余额:"
+                android:textSize="20dp"
+                android:textColor="@color/blue"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:background="@null"
+                android:id="@+id/ShowMeRMB"
+                android:focusable="false"
+                android:layout_width="270dp"
+                android:layout_height="40dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/StartSetting"
+            android:backgroundTint="@color/blue"
+            android:text="开始修改"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/FinishSetting"
+            android:text="完成修改"
+            android:layout_marginLeft="40dp"
+            android:backgroundTint="@color/blue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</LinearLayout>
